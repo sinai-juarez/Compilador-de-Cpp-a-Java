@@ -105,3 +105,7 @@ de cada carpeta y cómo ejecutarla.
   necesita además `flex` y `gcc` en Linux y macOS.
 
 Los detalles están en el README de cada asignación.
+
+---
+
+<sub>La interfaz gráfica se desarrolló con apoyo de herramientas de inteligencia artificial.</sub>
