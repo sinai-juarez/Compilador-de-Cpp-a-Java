@@ -19,3 +19,14 @@ dist/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Archivos que genera el analizador en Flex al compilar y ejecutar
+**/flex/lex.yy.c
+**/flex/analizador_lexico
+**/flex/analizador_lexico.exe
+**/flex/tiraTokens.txt
+**/flex/tablaSimbolos.txt
+**/flex/errores.txt
+**/flex/_fuente_actual.cpp
+**/flex/.lexer_original.l
+**/flex/lexer_anterior.l
