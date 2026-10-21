@@ -1,0 +1,25 @@
+Herramientas integradas en el .exe de Windows
+=============================================
+
+Gracias a esta carpeta el AnalizadorLexico.exe compila lexer.l sin que
+haya que instalar nada. Solo se usan en Windows; en Linux y macOS el
+programa usa el flex y el gcc del sistema.
+
+flex/win_flex.exe
+    Flex para Windows, de WinFlexBison 2.5.25 (flex 2.6.4).
+    https://github.com/lexxmark/winflexbison
+    Licencia: GPL (WinFlexBison) / BSD (flex).
+
+tcc/
+    Tiny C Compiler 0.9.27 para Windows de 64 bits (tcc.exe, sus
+    encabezados y bibliotecas). Compila el lex.yy.c que genera flex.
+    https://bellard.org/tcc/
+    Licencia: LGPL.
+
+Para regenerar el .exe (desde la carpeta Arquitectura_software_PyS):
+    pyinstaller --onefile --windowed --name Compilador
+        --paths src
+        --add-data "flex;flex" --add-data "imagenes;imagenes"
+        --add-data "herramientas;herramientas"
+        --add-data "gramaticas;gramaticas"
+        src/compi/presentacion/compilador.py

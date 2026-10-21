@@ -20,7 +20,7 @@ se genera con **Flex**.
 |------|------------|--------|---------|
 | Análisis léxico | Asignación 1 — Implementación de analizador lexico usando un AFD | Terminada | [`Implementación de analizador lexico usando un AFD/`](<Implementación de analizador lexico usando un AFD/>) |
 | Análisis léxico | Asignación 2 — Implementación del analizador léxico en Flex | Terminada | [`Implementación del analizador léxico en Flex/`](<Implementación del analizador léxico en Flex/>) |
-| Análisis sintáctico | Asignación 3 — Primeros y Siguientes | Por subir | — |
+| Análisis sintáctico | Asignación 3 — Implementación del algoritmo Primeros y Siguientes | Terminada | [`Analizador sintáctico Implementación del algoritmo primeros y siguientes/`](<Analizador sintáctico Implementación del algoritmo primeros y siguientes/>) |
 | Análisis sintáctico | Asignación 4 — Colección canónica | Por subir | — |
 | Análisis semántico | — | Pendiente | — |
 | Generación de código Java | — | Pendiente | — |
@@ -42,14 +42,25 @@ Compilador-Cpp-a-Java/
 │   ├── ejecutable/                  AnalizadorLexico.exe para Windows
 │   ├── capturas/                    Imágenes de la interfaz
 │   └── iniciar.bat / .sh / .command Lanzadores para cada sistema
-└── Implementación del analizador léxico en Flex/
-    │                                Asignación 2: analizador léxico generado con Flex
-    ├── flex/                        lexer.l (especificación en Flex)
-    ├── src/                         Interfaz por capas (persistencia y presentación)
+├── Implementación del analizador léxico en Flex/
+│   │                                Asignación 2: analizador léxico generado con Flex
+│   ├── flex/                        lexer.l (especificación en Flex)
+│   ├── src/                         Interfaz por capas (persistencia y presentación)
+│   ├── archivos_prueba/             Programas C++ de ejemplo
+│   ├── documentacion/               Informe, asignación de actividades y bitácora
+│   ├── ejecutable/                  AnalizadorLexicoFlex.exe para Windows
+│   ├── herramientas/                win_flex y TinyCC que usa el .exe de Windows
+│   ├── imagenes/                    Logo de la pantalla de inicio
+│   ├── capturas/                    Imágenes de la interfaz
+│   └── iniciar.bat / .sh / .command Lanzadores para cada sistema
+└── Analizador sintáctico Implementación del algoritmo primeros y siguientes/
+    │                                Asignación 3: conjuntos PRIMERO y SIGUIENTE de una gramática
+    ├── gramaticas/                  Gramáticas 1 a 6 de la asignación
+    ├── src/                         Interfaz por capas, con el analizador sintáctico agregado
     ├── archivos_prueba/             Programas C++ de ejemplo
     ├── documentacion/               Informe, asignación de actividades y bitácora
-    ├── ejecutable/                  AnalizadorLexicoFlex.exe para Windows
-    ├── herramientas/                win_flex y TinyCC que usa el .exe de Windows
+    ├── ejecutable/                  PrimerosSiguientes.exe para Windows
+    ├── flex/, herramientas/         Analizador léxico en Flex de la Asignación 2
     ├── imagenes/                    Logo de la pantalla de inicio
     ├── capturas/                    Imágenes de la interfaz
     └── iniciar.bat / .sh / .command Lanzadores para cada sistema
@@ -66,6 +77,10 @@ de cada carpeta y cómo ejecutarla.
 |:-:|:-:|
 | ![Analizador léxico con AFD](<Implementación de analizador lexico usando un AFD/capturas/ventana_principal.png>) | ![Analizador léxico en Flex](<Implementación del analizador léxico en Flex/capturas/ventana_principal.png>) |
 
+**Asignación 3 — Primeros y Siguientes**
+
+![Cálculo de primeros y siguientes](<Analizador sintáctico Implementación del algoritmo primeros y siguientes/capturas/primeros_siguientes.png>)
+
 ---
 
 ## Cómo probarlo
@@ -74,7 +89,7 @@ de cada carpeta y cómo ejecutarla.
   de la asignación y ábrelo con doble clic.
 - **Cualquier sistema, desde el código:** instala Python 3.9 o superior con
   Tkinter y ejecuta el lanzador de la asignación (`iniciar.bat`, `iniciar.sh` o
-  `iniciar.command`). La Asignación 2 necesita además `flex` y `gcc`
-  en Linux y macOS.
+  `iniciar.command`). El analizador en Flex (Asignaciones 2 y 3)
+  necesita además `flex` y `gcc` en Linux y macOS.
 
 Los detalles están en el README de cada asignación.
