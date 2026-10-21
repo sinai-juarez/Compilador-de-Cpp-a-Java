@@ -1,0 +1,8 @@
+E E' T T' F
++ * ( ) id
+E''→E$
+E→TE'
+E'→+TE' | ε
+T→FT'
+T'→*FT' | ε
+F→(E) | id
