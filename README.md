@@ -1,7 +1,7 @@
 # Compilador C++ → Java
 
-Proyecto del curso de **Compiladores** (Instituto de Computación, Universidad
-Tecnológica de la Mixteca).
+Proyecto del curso de **Compiladores**, de quinto semestre de la carrera de
+**Ingeniería en Computación**, Universidad Tecnológica de la Mixteca.
 
 Es un compilador que toma programas escritos en **C++** (lenguaje fuente) y los
 traducirá a **Java** (lenguaje destino). Está escrito en **Python** con interfaz
